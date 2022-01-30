@@ -9,7 +9,7 @@ except:
     print('File cannot be opened:', fname) #returns 'File cannot be opened' to user and quits
     exit()
 count = 0 #establishes line count at 0
-email_add = dict() #creates dictionary under variable msgs
+email_add = dict() #creates dictionary under variable email_add
 for line in fhand: #looks at user's chosen program line by line
     if line.startswith('From '): #looks for word from in each line
         eaddy = line.split()[1]#prints second element on the
